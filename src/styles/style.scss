@@ -1,0 +1,82 @@
+//ファイルのインポート
+@import 'lib/import';
+@import "lib/base";
+@import "lib/layout";
+@import "lib/mixins";
+
+body {
+	background-color: #fff;
+	font-family: mc-l;
+	font-size: 18px;
+	@include media-query(tb) {
+		background-color: red;
+	}
+}
+#title {
+	width: 100%;
+	height: 100vh;
+	box-sizing: border-box;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	h1 {
+		font-size: 5rem;
+		font-family: mc-r;
+		letter-spacing: 0.7rem;
+		text-align: center;
+		line-height: 100vh;
+		color: #fff;
+	}
+	img {
+		width: 12rem;
+		padding-top: 4rem;
+	}
+}
+#story {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	box-sizing: border-box;
+	writing-mode: vertical-rl;
+	background-color: #fff;
+	-webkit-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover; 
+	position: absolute;
+	color: #000;
+	top: 100vh;
+	#hanasaka {
+		position: absolute;
+		right: 110%;
+		.txt{
+			line-height: 2;
+			display: inline-block;
+			height: 100%;
+			opacity: 0;
+			transform: matrix(1,-0.2,0,0.99,0,0.5);
+		}
+	}
+}
+#footer {
+	width: 100%;
+	height: 300px;
+	background-color: #000;
+	position: absolute;
+	background-color: #888;
+	top: 10000vh; //ここを上の高さを合わせた数値にする。jsを使う。
+}
+
+
+//こっからabout.htmlが主に適用
+#about {
+	width: 100%;
+	height: 100vh;
+	background-color: #e1a495;
+	h1 {
+		color: #fff;
+		text-align: center;
+		font-size: 8rem;
+		font-family: mc-m;
+		letter-spacing: 0.5rem;
+	}
+}
