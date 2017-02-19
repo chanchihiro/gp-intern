@@ -6,8 +6,6 @@ html(lang="ja")
     link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
     title リリベル
   body
-    p#app 
-      | アプリでもっと快適に！
     div.header
       div.content
        nav
@@ -15,10 +13,13 @@ html(lang="ja")
         ul
          li
           a(href="about.html") リリベルとは
-         li サービス
-         li 会員登録
-         li ログイン
-       h2 ペットがいても安心して旅行に。
+         li
+          a(href="about.html") サービス
+         li 
+          a(href="about.html") 会員登録
+         li 
+          a(href="about.html") ログイン
+       h2#title ペットがいても安心して旅行に。
        h3 
         | 旅行の際に一緒に連れて行けない家族をサポートします。
         br
@@ -38,19 +39,28 @@ html(lang="ja")
     div#container
      div.description
       h3 リリベルの特徴
+      hr#sen
       div.colums
        div.colum
-        img(src="https://placehold.jp/200x200.png")
-        h6 どこよりも安心
-        p リリベルはどこよりも安心です
+        img(src="img/kuma.jpg")
+        h6 探しやすい検索
+        p
+         |あなたに合わせた絞り込み要素や
+         br
+         |優先順位に応じて検索を高速化します。
        div.colum
-        img(src="https://placehold.jp/200x200.png")
+        img(src="img/dog6.jpg")
         h6 どこよりも安心
-        p リリベルはどこよりも安心です
+        p 
+         |リリベルはどこよりも安心です。
+         br
+         |日本ペットシッター協会に加盟している、
+         br
+         |資格を持っているなど掲載する情報には気を配っています。
        div.colum
-        img(src="https://placehold.jp/200x200.png")
-        h6 どこよりも安心
-        p リリベルはどこよりも安心です
+        img(src="img/dog5.jpg")
+        h6 使い方が簡単
+        p 旅行に行くだけでも大変な作業の一つにもならないでしょう。
      div.passion
       h2.comment お客様を助けたい。その気持ちから始まりました。 
       p.comments
@@ -76,6 +86,18 @@ html(lang="ja")
        br
        br
        |疑問を持て。僕らは立ち上がる。
-
-
+    footer
+     img(src="img/app-icon.png" class="icon")
+     h2#apptitle 家族内ファボで新たな旅行体験を。
+     div.links
+      img(src="img/appstore.png" class="appstore")
+     div.com
+      div.company
+       ul
+        li 運営会社
+        li お問い合わせ
+        li ヘルプ
+      div.copy
+       p
+        small#small Copyright (C) aranami, Inc. All rights reserved.
     script(src="js/bundle.js")
