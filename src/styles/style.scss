@@ -169,6 +169,7 @@ li {
 			.colum {
 				width: 33%;
 				float: left;
+				opacity: 0;
 				overflow: hidden;
 				text-align: center;
 				img{
@@ -190,6 +191,7 @@ li {
 		color: #000;
 		text-align: center;
 		margin-top: 120px;
+		opacity: 0;
 		.comment {
 			padding: 100px 0px 80px;
 			font-size: 30px;
