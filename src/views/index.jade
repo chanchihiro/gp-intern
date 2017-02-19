@@ -5,5 +5,33 @@ html(lang="ja")
     link(href="css/style.css" rel="stylesheet" type="text/css")
     title リリベル
   body
+    p#app アプリでもっと快適に！
+    div.header
+      div.content
+       nav
+        h1 リリベル
+        ul
+         li
+          a(href="about.html") リリベルとは
+         li サービス
+         li 会員登録
+         li ログイン
+       h2 ペットがいても安心して旅行に。
+       h3 
+        | 旅行の際に一緒に連れて行けない家族をサポートします。
+        br
+        | 信頼のペットシッターに出会うことができます。
+       form
+        div.inner
+         h4 シッターに出会う
+         div.inputter
+          div.location.un
+           input(type="textarea" placeholder="お住いはどこですか？")
+          div.date.un
+           input(type="textarea" placeholder="いつ旅行に行きますか？")
+          div.cate.un
+           input(type="textarea" placeholder="ペットの種類は？")
+          div.un
+           submit(type="submit") 検索
     div#container
     script(src="js/bundle.js")

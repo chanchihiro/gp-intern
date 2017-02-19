@@ -7,33 +7,33 @@ import Indicator from './components/indicator.js'
 console.log('start'); //スタート
 
 let controller = new ScrollMagic.Controller();
-let txts = [];
-txts = document.getElementsByClassName('txt');
-console.log(txts);
-let hanasaka = document.getElementById('hanasaka');
-console.log(hanasaka);
+// let txts = [];
+// txts = document.getElementsByClassName('txt');
+// console.log(txts);
+// let hanasaka = document.getElementById('hanasaka');
+// console.log(hanasaka);
 
-let txtshow = TweenMax.staggerTo(txts, 50, {opacity:1, transform:'matrix(1,0,0,1,0,0)'}, 20); //対象,かかる時間,
-let txtmove = TweenMax.to(hanasaka, 30, {right: "-200%"}, 100);
+// let txtshow = TweenMax.staggerTo(txts, 50, {opacity:1, transform:'matrix(1,0,0,1,0,0)'}, 20); //対象,かかる時間,
+// let txtmove = TweenMax.to(hanasaka, 30, {right: "-200%"}, 100);
 
-let scene = new ScrollMagic.Scene({
-	triggerElement: '#story', 
-	duration: 80000, 
-	triggerHook: 'onLeave'
-	})
-	.setTween(txtshow)
-	.addTo(controller)
-	.addIndicators({name: 'txtshow'});
+// let scene = new ScrollMagic.Scene({
+// 	triggerElement: '#story', 
+// 	duration: 80000, 
+// 	triggerHook: 'onLeave'
+// 	})
+// 	.setTween(txtshow)
+// 	.addTo(controller)
+// 	.addIndicators({name: 'txtshow'});
 
-let scene2 = new ScrollMagic.Scene({
-	triggerElement: '#story',
-	duration: 208000,
-	triggerHook: 'onLeave'
-	})
-	.setTween(txtmove)
-	.setPin('#story')
-	.addTo(controller)
-	.addIndicators({name: 'txtmove'});
+// let scene2 = new ScrollMagic.Scene({
+// 	triggerElement: '#story',
+// 	duration: 208000,
+// 	triggerHook: 'onLeave'
+// 	})
+// 	.setTween(txtmove)
+// 	.setPin('#story')
+// 	.addTo(controller)
+// 	.addIndicators({name: 'txtmove'});
 
 // $.each(txts, function(i, text) {
 // 	new ScrollMagic.Scene({
