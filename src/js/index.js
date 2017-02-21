@@ -26,7 +26,7 @@ let scene = new ScrollMagic.Scene({
 	.addIndicators({name: 'firstshow'});
 
 let scene2 = new ScrollMagic.Scene({
-	duration: 700,
+	duration: 1200,
 	offset: 1000
 	})
 	.setTween(second)
