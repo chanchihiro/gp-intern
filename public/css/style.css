@@ -1,0 +1,315 @@
+@font-face {
+  font-family: mc-l;
+  src: url(../font/mplus-1m-light.ttf) format("opentype"); }
+
+@font-face {
+  font-family: mc-b;
+  src: url(../font/mplus-1m-bold.ttf) format("opentype"); }
+
+@font-face {
+  font-family: mc-r;
+  src: url(../font/mplus-1m-regular.ttf) format("opentype"); }
+
+@font-face {
+  font-family: mc-t;
+  src: url(../font/mplus-1m-thin) format("opentype"); }
+
+@font-face {
+  font-family: mc-m;
+  src: url(../font/mplus-1m-medium.ttf) format("opentype"); }
+
+@font-face {
+  font-family: yugothic;
+  src: url(../font/yu-gothic.otf) format("opentype"); }
+
+.vertical {
+  writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl; }
+
+* {
+  padding: 0;
+  margin: 0;
+  font-weight: normal; }
+
+input, button, textarea, select {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+.p-v-01 {
+  padding: 1rem 0rem; }
+
+.p-v-02 {
+  padding: 2rem 0rem; }
+
+.p-v-03 {
+  padding: 3rem 0rem; }
+
+.p-v-04 {
+  padding: 4rem 0rem; }
+
+.p-v-05 {
+  padding: 5rem 0rem; }
+
+.p-v-06 {
+  padding: 6rem 0rem; }
+
+.p-v-07 {
+  padding: 7rem 0rem; }
+
+.p-v-08 {
+  padding: 8rem 0rem; }
+
+.p-s-01 {
+  padding: 0rem 1rem; }
+
+.p-s-02 {
+  padding: 0rem 2rem; }
+
+.p-s-03 {
+  padding: 0rem 3rem; }
+
+.p-s-04 {
+  padding: 0rem 4rem; }
+
+.p-s-05 {
+  padding: 0rem 5rem; }
+
+.p-s-06 {
+  padding: 0rem 6rem; }
+
+.p-s-07 {
+  padding: 0rem 7rem; }
+
+.p-s-08 {
+  padding: 0rem 8rem; }
+
+.p-vs-01 {
+  padding: 1rem 1rem; }
+
+.p-vs-02 {
+  padding: 2rem 2rem; }
+
+.p-vs-03 {
+  padding: 3rem 3rem; }
+
+.p-vs-04 {
+  padding: 4rem 4rem; }
+
+.p-vs-05 {
+  padding: 5rem 5rem; }
+
+.p-vs-06 {
+  padding: 6rem 6rem; }
+
+.p-vs-07 {
+  padding: 7rem 7rem; }
+
+.p-vs-08 {
+  padding: 8rem 8rem; }
+
+body {
+  background-color: #fff;
+  font-family: yugothic;
+  font-size: 18px;
+  color: #fff; }
+
+#app {
+  width: 100%;
+  background-color: black;
+  float: left;
+  color: #fff;
+  padding: 14px 0;
+  font-family: mc-b;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 7px;
+  cursor: pointer; }
+
+.header {
+  height: 750px;
+  width: 100%;
+  background-image: url(../img/dogs.jpg);
+  background-size: cover;
+  background-position: 0px 0px; }
+
+.content {
+  width: 980px;
+  margin: 0 auto; }
+  .content nav {
+    padding: 20px 0px;
+    overflow: hidden;
+    width: 100%;
+    float: left;
+    overflow: hidden; }
+    .content nav h1 {
+      width: 200px;
+      float: left; }
+    .content nav ul {
+      float: right;
+      margin-top: 10px; }
+      .content nav ul li {
+        float: left;
+        margin-right: 20px;
+        vertical-align: middle;
+        font-size: 0.8em; }
+        .content nav ul li a {
+          text-decoration: none;
+          color: #000;
+          padding-bottom: 5px;
+          -webkit-transition: 0.5s;
+          transition: 0.5s; }
+          .content nav ul li a:hover {
+            color: #ffc34d; }
+  .content #title {
+    text-align: center;
+    padding: 180px 0px 25px;
+    font-family: yugothic;
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: 0.4rem;
+    color: #000; }
+  .content h3 {
+    text-align: center;
+    font-size: 17px;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    line-height: 1.7; }
+  .content form {
+    margin-top: 40px;
+    padding: 18px 0 25px;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    overflow: hidden;
+    border-radius: 8px; }
+    .content form h4 {
+      font-size: 28px;
+      font-weight: 600;
+      color: #000;
+      padding: 10px 0px 20px; }
+    .content form .inputter {
+      width: 80%;
+      margin: 0 auto; }
+      .content form .inputter .un {
+        width: 25%;
+        height: 50px;
+        float: left;
+        background-color: #fff;
+        border-right: #111 solid 4px;
+        box-sizing: border-box; }
+        .content form .inputter .un:nth-child(3) {
+          border: none; }
+        .content form .inputter .un:last-child {
+          background-color: #000;
+          line-height: 50px;
+          cursor: pointer;
+          border-radius: 4px;
+          background-color: #46b7b7;
+          color: #fff;
+          font-weight: 300;
+          letter-spacing: 0.4em;
+          font-family: mr-b;
+          border: none; }
+          .content form .inputter .un:last-child:hover {
+            opacity: 0.9; }
+        .content form .inputter .un input {
+          background-color: #fff;
+          line-height: 50px;
+          font-size: 16px; }
+
+li {
+  list-style-type: none; }
+
+#container {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  color: #000; }
+  #container .description {
+    color: #000;
+    text-align: center;
+    margin-top: 160px;
+    overflow: hidden; }
+    #container .description #sen {
+      width: 80px;
+      height: 3px;
+      background-color: #000;
+      margin: 0 auto; }
+    #container .description img {
+      border: 6px solid #000;
+      border-radius: 8px; }
+    #container .description h3 {
+      font-weight: 800;
+      font-size: 1.2em;
+      letter-spacing: 0.1em;
+      padding-bottom: 8px; }
+    #container .description .colums {
+      padding-top: 50px;
+      overflow: hidden; }
+      #container .description .colums .colum {
+        width: 33%;
+        float: left;
+        opacity: 0;
+        overflow: hidden;
+        text-align: center; }
+        #container .description .colums .colum img {
+          width: 340px; }
+        #container .description .colums .colum h6 {
+          font-size: 1em;
+          font-weight: 800;
+          padding: 25px 0 10px; }
+        #container .description .colums .colum p {
+          font-size: 12px;
+          font-weight: 500; }
+  #container .passion {
+    color: #000;
+    text-align: center;
+    margin-top: 120px;
+    opacity: 0; }
+    #container .passion .comment {
+      padding: 100px 0px 80px;
+      font-size: 30px;
+      font-weight: 700; }
+    #container .passion .comments {
+      font-weight: 700;
+      width: 900px;
+      margin: 0 auto;
+      margin-bottom: 250px;
+      line-height: 2; }
+
+footer {
+  width: 100%;
+  height: 100vh;
+  background-color: #191919;
+  text-align: center;
+  position: relative; }
+  footer #apptitle {
+    font-size: 2em;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    padding: 10px 0; }
+  footer .icon {
+    width: 170px;
+    margin-top: 70px; }
+  footer .appstore {
+    width: 230px;
+    margin-top: 50px; }
+  footer .company {
+    margin-top: 20px; }
+    footer .company li {
+      padding: 5px 0;
+      color: rgba(100, 100, 100, 0.7); }
+  footer .copy p #small {
+    position: absolute;
+    text-align: center;
+    bottom: 20px;
+    right: 30px;
+    color: rgba(100, 100, 100, 0.7); }
