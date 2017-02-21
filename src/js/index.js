@@ -22,16 +22,14 @@ let scene = new ScrollMagic.Scene({
 	offset: 300
 	})
 	.setTween(firstshow)
-	.addTo(controller)
-	.addIndicators({name: 'firstshow'});
+	.addTo(controller);
 
 let scene2 = new ScrollMagic.Scene({
 	duration: 1200,
 	offset: 1000
 	})
 	.setTween(second)
-	.addTo(controller)
-	.addIndicators({name: 'txtmove'});
+	.addTo(controller);
 
 // $.each(txts, function(i, text) {
 // 	new ScrollMagic.Scene({
