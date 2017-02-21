@@ -18,8 +18,8 @@ let second = TweenMax.staggerTo(box2, 50, {opacity:1}, 20);
 // let txtmove = TweenMax.to(hanasaka, 30, {right: "-200%"}, 100);
 
 let scene = new ScrollMagic.Scene({
-	duration: 900, 
-	offset: 300
+	duration: 700, 
+	offset: 400
 	})
 	.setTween(firstshow)
 	.addTo(controller);
